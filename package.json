@@ -3,5 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "ivajo26",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "next": "^9.0.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
 }
