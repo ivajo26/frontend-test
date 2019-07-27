@@ -1,0 +1,47 @@
+height = 30px
+
+.Filter
+  display flex
+  justify-content space-around
+  align-items center
+  margin padding 0
+  padding: 0 padding*2
+  width 70%
+  &-icon
+    margin-right padding*2
+    color text-dark
+  &-switch
+    position relative
+    display inline-block
+    width 60px
+    height height - 2
+    &-checkbox
+      opacity 0
+      width 0
+      height 0
+      &:checked + span
+        background-color: primary;
+      &:checked + span:before
+        transform: translate(-(height+2), -50%);
+    &-slider
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: height;
+      &:before
+        position: absolute;
+        content: "";
+        height: height
+        width: height
+        right: -2%;
+        top: 50%;
+        transform translateY(-50%)
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
