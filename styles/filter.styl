@@ -1,4 +1,5 @@
 height = 30px
+width = 50px
 
 .Filter
   display flex
@@ -6,14 +7,14 @@ height = 30px
   align-items center
   margin padding 0
   padding: 0 padding*2
-  width 70%
+  width 80%
   &-icon
     margin-right padding*2
     color text-dark
   &-switch
     position relative
     display inline-block
-    width 60px
+    width width
     height height - 2
     &-checkbox
       opacity 0
@@ -22,7 +23,7 @@ height = 30px
       &:checked + span
         background-color: primary;
       &:checked + span:before
-        transform: translate(-(height+2), -50%);
+        transform: translate(-(height), -50%);
     &-slider
       position: absolute;
       cursor: pointer;
@@ -45,3 +46,4 @@ height = 30px
         background-color: white;
         transition: .4s;
         border-radius: 50%;
+        box-shadow -1px 1px 5px 1px text-dark

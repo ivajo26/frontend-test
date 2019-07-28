@@ -5,7 +5,7 @@ const Filter = (props) => {
   const [check, setCheck] = useState(true)
   return (
     <div className="Filter">
-      <span className="Filter-icon"><FontAwesomeIcon size="2x" icon={props.icon}/></span>
+      <span className="Filter-icon"><FontAwesomeIcon size="3x" icon={props.icon}/></span>
       <label className="Filter-switch">
         <input type="checkbox" className="Filter-switch-checkbox" checked={check}
           onChange={(e) => { setCheck(e.target.checked) }}/>

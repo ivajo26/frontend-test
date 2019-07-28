@@ -17,6 +17,10 @@ const Sidebar = () => (
       <Filter icon={faHeart}/>
       <hr className="divider"/>
       <h5 className="text font-weight-normal">Status</h5>
+      <form action="" className="Sidebar-options-form">
+        <input type="text" placeholder="Search"/>
+        <button className="btn">DELIVERED</button>
+      </form>
     </div>
   </Fragment>
 )
