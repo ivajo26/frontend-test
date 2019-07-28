@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Sidebar from '../components/sidebar'
+import Navbar from '../components/navbar'
 
 const getDisplayName = Component =>
   Component.displayName || Component.name || 'Component'
@@ -15,12 +16,7 @@ const Layout = (WrappedComponent) => {
             <Sidebar />
           </div>
           <div className="Layout-main">
-            <nav className="Main-nav">
-              <button>
-                <i></i>
-                <span>Home</span>
-              </button>
-            </nav>
+            <Navbar />
             <section className="Main-content">
               <WrappedComponent {...this.props} />
             </section>
