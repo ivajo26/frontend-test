@@ -17,9 +17,7 @@ const Layout = (WrappedComponent) => {
           </div>
           <div className="Layout-main">
             <Navbar />
-            <section className="Main-content">
-              <WrappedComponent {...this.props} />
-            </section>
+            <WrappedComponent {...this.props} />
           </div>
         </div>
       )
